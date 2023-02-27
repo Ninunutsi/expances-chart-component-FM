@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expences Chart Component</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="balance">
+            <div class="my-balance">
+                <span class="span">My balance</span>
+                <span class="amount">$921.48</span>
+            </div>
+            <img src="./assets/images/logo.svg" alt="">
+        </div>
+
+        <div class="week-graph">
+            <h2 class="h2">Spending - Last 7 days</h2>
+            <div class="graph">
+                <div class="day-div">
+                    <div class="day"></div>
+                    <span>mon</span>
+                </div>
+                <div class="day-div">
+                    <div class="day"></div>
+                    <span>tue</span>
+                </div>
+                <div class="day-div hoover">
+                    <p class="hidden-price hidden" id="hidden">$52.26</p>
+                    <div class="day"></div>
+                    <span>wed</span>
+                </div>
+                <div class="day-div hoover">
+                    <p class="hidden-price hidden">$31.07</p>
+                    <div class="day"></div>
+                    <span>thu</span>
+                </div>
+                <div class="day-div">
+                    <div class="day"></div>
+                    <span>fri</span>
+                </div>
+                <div class="day-div">
+                    <div class="day"></div>
+                    <span>sat</span>
+                </div>
+                <div class="day-div">
+                    <div class="day"></div>
+                    <span>sun</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="month">
+                <div class="total">
+                    <p class="total-this-month">Total this month</p>
+                    <p class="total-price">$478.33</p>
+                </div>
+                <div class="div-last-month">
+                    <p class="increase">+2.4%</p>
+                    <p class="last-month">from last month</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+}
+
+:root{
+    --Softred: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 0;
+}
+
+.balance{
+    background: var(--Softred);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.my-balance{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--Verypaleorange);
+}
+
+.amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.week-graph{
+    width: 450px;
+    background-color: var(--Verypaleorange);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.graph{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.h2{
+    color: var(--Darkbrown);
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.day{
+    background: hsl(10, 79%, 65%);
+    height: 20px;
+    width: 45px;
+    border-radius: 6px;
+    height: 50px;
+}
+
+.day-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-div span{
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--Mediumbrown);
+}
+
+.day:hover{
+    cursor: pointer;
+    transition: 1s;
+    background: hsla(10, 79%, 65%, 0.582);
+}
+
+.hidden-price{
+    color: var(--Verypaleorange);
+    background-color: var(--Darkbrown);
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 7px 9px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -2.4rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.hoover{
+    position: relative;
+    overflow: visible;
+}
+
+.hoover:hover .hidden{
+    display: block;
+    transition: 1s;
+}
+
+.line{
+    border: 1px solid var(--Cream);
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total-this-month{
+    color: var(--Mediumbrown);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.total-price{
+    color: var(--Darkbrown);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+.increase{
+    font-weight: bold;
+    color: var(--Darkbrown);
+    text-align: end;
+}
+
+.last-month{
+    color: var(--Mediumbrown);
+}
